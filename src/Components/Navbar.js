@@ -1,15 +1,17 @@
 import React from 'react'
-import { Link } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll'
+import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 const Navbar = () => {
   return (
     <header className='Navbar'>
       <nav className='navbar-container'>
         <ul className='nav-links'>
-          <li><Link to='home' smooth={true} duration={500}>Home</Link></li>
-          <li><Link to='about' smooth={true} duration={500}>About</Link></li>
-          <li>Skills</li>
-          <li>Projects</li>
+          <li><HashLink to='/' smooth={true}>Home</HashLink></li>
+          <li><HashLink to='/#about' smooth={true} duration={500}>About</HashLink></li>
+          <li><Link to='/skills'>Skills</Link></li>
+          <li><Link to='/projects' >Projects</Link></li>
           <li>Resume</li>
         </ul>
       </nav>

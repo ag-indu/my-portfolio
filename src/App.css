@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar{
+  padding: 10px;
+  height: 40px;
+  background-color: aqua;
+}
+.navbar-container{
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-links{
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.home{
+  height: 100vh;
+}
+
+.about{
+  height: 100vh;
+}

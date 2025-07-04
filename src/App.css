@@ -1,12 +1,13 @@
 *{
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 .Navbar{
   padding: 10px;
   height: 40px;
-  background-color: aqua;
+  background-color: rgb(9, 9, 9);
 }
 .navbar-container{
   display: flex;
@@ -30,6 +31,16 @@
 
 .home{
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.home-img{
+  width: 350px;
+  height: auto;
+  object-fit: contain;
 }
 
 .about{
@@ -43,4 +54,9 @@
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.highlighted-name {
+  color: #38bdf8; /* Your light blue theme color */
+  font-weight: bold;
 }

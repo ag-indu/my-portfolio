@@ -5,6 +5,7 @@ import MainContent from './Components/MainContent.js';
 import Skills from './Components/Skills.js';
 import Project from './Components/Project';
 import Background from './Components/Background.jsx';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/skills' element={<Skills/>}/>
         <Route path='/projects' element={<Project/>}/>
       </Routes>
+      <Footer/>
     </>
   );
 }

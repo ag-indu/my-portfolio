@@ -5,8 +5,8 @@
 }
 
 .Navbar{
-  padding: 10px;
-  height: 40px;
+  display: flex;
+  height: 50px;
   background-color: rgba(0, 0, 0, 0.5); /* Translucent black */
   backdrop-filter: blur(8px); /* Glass effect */
   -webkit-backdrop-filter: blur(8px); /* Safari support */
@@ -15,7 +15,9 @@
   left: 0;
   right: 0;
   z-index: 1000;
-}
+  align-items: center;
+  justify-content: flex-end;
+  }
 .navbar-container{
   display: flex;
   justify-content: flex-end;
@@ -69,12 +71,13 @@
   padding-top: 75px;
   padding-left: 30px;
   padding-right: 20px;
+  min-height: 80vh;
 }
 
 .about{
   width: 100%;
   min-height: 100vh;
-  background-color: #0f172a; /* Dark blue shade */
+  /*background-color: #0f172a; /* Dark blue shade */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,4 +126,30 @@
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: #cbd5e1; /* Softer white for readability */
+}
+
+.footer{
+  display: flex;
+  height: 50px;
+  background-color: #0d1425;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-between;
+  
+}
+
+.foo-left{
+  margin-left: 20px;
+  width: 300px;
+}
+
+.foo-middle{
+  
+
+}
+
+.foo-right{
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
 }

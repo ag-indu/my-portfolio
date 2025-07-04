@@ -2,12 +2,13 @@
   margin:0 ;
   padding: 0;
   color: white;
+  font-family: 'Montserrat';
 }
 
 .Navbar{
   display: flex;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.5); /* Translucent black */
+  background-color: #0d1425; /* Translucent black */
   backdrop-filter: blur(8px); /* Glass effect */
   -webkit-backdrop-filter: blur(8px); /* Safari support */
   position: fixed;
@@ -152,4 +153,47 @@
   width: 200px;
   display: flex;
   justify-content: space-evenly;
+}
+
+.skills-section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.skills-heading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.skill-card {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  background-color: rgba(56, 189, 248, 0.2);
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
 }

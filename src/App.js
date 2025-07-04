@@ -6,10 +6,12 @@ import Skills from './Components/Skills.js';
 import Project from './Components/Project';
 import Background from './Components/Background.jsx';
 import Footer from './Components/Footer';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
     <>
+      <ScrollToTop/>
       <Background />
       <Navbar/>
       <Routes>

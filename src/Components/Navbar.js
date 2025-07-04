@@ -7,7 +7,7 @@ const Navbar = () => {
     <header className='Navbar'>
       <nav className='navbar-container'>
         <ul className='nav-links'>
-          <li><HashLink to='/' smooth={true}>Home</HashLink></li>
+          <li><HashLink to='/#home' smooth={true}>Home</HashLink></li>
           <li><HashLink to='/#about' smooth={true} duration={500}>About</HashLink></li>
           <li><Link to='/skills'>Skills</Link></li>
           <li><Link to='/projects' >Projects</Link></li>

@@ -1,5 +1,5 @@
 *{
-  margin: 0;
+  margin:0 ;
   padding: 0;
   color: white;
 }
@@ -7,19 +7,27 @@
 .Navbar{
   padding: 10px;
   height: 40px;
-  background-color: rgb(9, 9, 9);
+  background-color: rgba(0, 0, 0, 0.5); /* Translucent black */
+  backdrop-filter: blur(8px); /* Glass effect */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 .navbar-container{
   display: flex;
   justify-content: flex-end;
-  
+  align-items: center;
 }
 .nav-links{
   display: flex;
-  gap: 30px;
+  gap: 60px;
   list-style-type: none;
   align-items: center;
   cursor: pointer;
+  padding-right: 20px;
 }
 
 .nav-links a{
@@ -43,10 +51,6 @@
   object-fit: contain;
 }
 
-.about{
-  height: 100vh;
-}
-
 #tsparticles {
   position: fixed;
   width: 100%;
@@ -59,4 +63,64 @@
 .highlighted-name {
   color: #38bdf8; /* Your light blue theme color */
   font-weight: bold;
+}
+
+.page-wrapper{
+  padding-top: 75px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+.about{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0f172a; /* Dark blue shade */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.about-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #38bdf8; /* Light blue */
+  position: relative;
+}
+
+.about-heading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #38bdf8;
+  margin-top: 0.5rem;
+}
+
+.about-image {
+  width: 400px; /* Responsive: min 300px width */
+  text-align: center;
+}
+
+.about-image img {
+  width: 60%;
+  border-radius: 60%;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5); /* Glowy blue shadow */
+}
+
+.about-text {
+  width: 500px; /* Responsive: min 400px width */
+  color: white;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #cbd5e1; /* Softer white for readability */
 }

@@ -11,6 +11,7 @@
 .navbar-container{
   display: flex;
   justify-content: flex-end;
+  
 }
 .nav-links{
   display: flex;
@@ -20,10 +21,26 @@
   cursor: pointer;
 }
 
+.nav-links a{
+  text-decoration: none;
+  color: inherit
+  ;
+}
+
+
 .home{
   height: 100vh;
 }
 
 .about{
   height: 100vh;
+}
+
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }

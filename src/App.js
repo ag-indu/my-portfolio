@@ -4,10 +4,12 @@ import Navbar from './Components/Navbar';
 import MainContent from './Components/MainContent.js';
 import Skills from './Components/Skills.js';
 import Project from './Components/Project';
+import Background from './Components/Background.jsx';
 
 function App() {
   return (
     <>
+      <Background />
       <Navbar/>
       <Routes>
         <Route path='/' element={<MainContent/>}/>

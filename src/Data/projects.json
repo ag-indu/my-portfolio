@@ -1,0 +1,33 @@
+[
+    {
+      "title": "Shopistry",
+      "description": "A full-stack e-commerce app built with React and Spring Boot.",
+      "techStack": ["React", "Spring Boot", "MySQL"],
+      "image": "shopistry.png",
+      "link": "https://github.com/ag-indu/Shopistry"
+    },
+    {
+      "title": "Portfolio",
+      "description": "My personal portfolio built with React and tsparticles.",
+      "techStack": ["React", "CSS", "tsparticles"],
+      "image": "portfolio.png",
+      "link": "https://github.com/ag-indu/my-portfolio"
+    },
+    {
+        "title": "Youtube Clone",
+        "description": "A clone of the YouTube homepage built purely using HTML and CSS. This project mimics the basic layout and design of YouTube's front page, including the header, sidebar, video grid, and responsive styling. No JavaScript or backend is used — this is a frontend-only static project.",
+        "techStack": ["React", "CSS", "tsparticles"],
+        "image": "youtube_clone.png",
+        "link": "https://github.com/ag-indu/Youtube-clone"
+      },
+      {
+        "title": "Nexlogix",
+        "description": "Developed NexLogix, a full-stack warehouse management system with multi-business support, real-time inventory tracking, and AI-based demand forecasting.",
+        "techStack": ["Html", "CSS", "Django"],
+        "image": "nexlogix.png",
+        "link": "https://github.com/ag-indu/Nexlogix"
+      }
+
+      
+  ]
+  

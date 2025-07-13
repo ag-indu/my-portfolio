@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import { Routes,Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import MainContent from './Components/MainContent.js';
 import Skills from './Components/Skills.js';
@@ -10,18 +10,24 @@ import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
-    <>
-      <ScrollToTop/>
+    <div className="flex flex-col min-h-screen bg-[#0f172a] text-white">
+      <ScrollToTop />
       <Background />
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<MainContent/>}/>
-        <Route path='/skills' element={<Skills/>}/>
-        <Route path='/projects' element={<Project/>}/>
-      </Routes>
-      <Footer/>
-    </>
+      <Navbar />
+
+      
+      <main className="flex-grow relative z-10">
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Project />} />
+        </Routes>
+      </main>
+
+      <Footer />
+    </div>
   );
 }
+
 
 export default App;

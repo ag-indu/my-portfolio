@@ -16,7 +16,7 @@
     {
         "title": "Youtube Clone",
         "description": "A clone of the YouTube homepage built purely using HTML and CSS. This project mimics the basic layout and design of YouTube's front page, including the header, sidebar, video grid, and responsive styling. No JavaScript or backend is used — this is a frontend-only static project.",
-        "techStack": ["React", "CSS", "tsparticles"],
+        "techStack": ["HTML", "CSS"],
         "image": "youtube_clone.png",
         "link": "https://github.com/ag-indu/Youtube-clone"
       },
